@@ -1,0 +1,46 @@
+//------------TEAM-SLIDER------------
+.team-slider
+  margin-top: 60px
+
+.team-slider-item
+  margin: 130px 0 0
+
+.team-slider-item-info
+  margin: 0 auto
+  width: 350px
+  position: relative
+  text-align: center
+  font-size: 24px
+  height: 281px
+  background: $text-color--light
+  padding: 155px 0 0
+
+  &__img
+    position: absolute
+    top: -50%
+    left: 50%
+    transform: translateX(-50%)
+
+  &__name
+    font-family: $second-ff
+    color: $img-bg
+    text-transform: uppercase
+    margin-bottom: 19px
+
+  &__profession
+    font-weight: 400
+    font-style: italic
+    color: $text-color--dark
+
+.team-slider-item-contacts
+  width: 350px
+  margin: 0 auto
+  background: $img-bg
+  padding: 19px 0
+
+  &__link
+    margin: 0 6px
+    display: inline-block
+
+    img:hover
+      transform: scale(1.2)

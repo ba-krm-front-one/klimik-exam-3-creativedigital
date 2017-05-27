@@ -1,0 +1,44 @@
+//------------CONTACT-FORM------------
+.contact-form
+  max-width: 930px
+  margin: 271px auto 0
+  color: $text-color--dark
+
+  &__input
+    margin: 0 16px 28px
+    width: 414px
+    height: 56px
+    background: rgba(235, 235, 235, .5)
+    border-radius: 4px
+    padding-left: 27px
+    font-size: 18px
+    font-style: italic
+    font-weight: 400
+
+  &__textarea
+    @extend .contact-form__input
+    width: 866px
+    height: 200px
+    border: none
+    padding-top: 24px
+    margin: 0
+
+  &__submit
+    width: 293px
+    height: 70px
+    border-radius: 4px
+    background: $img-bg
+    color: $text-color--light
+    font-size: 20px
+    font-family: $second-ff
+    margin-top: 55px
+
+    &:hover
+      box-shadow: inset 1px -1px 4px 1px $text-color--dark
+      transform: translateY(1px)
+
+
+::-webkit-input-placeholder
+  color: $text-color--light
+::-moz-placeholder
+  color: $text-color--light

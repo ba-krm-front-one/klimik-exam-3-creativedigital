@@ -1,0 +1,54 @@
+//------------CONTACT-BTN------------
+.contact-btn
+  transition: transform 0.5s ease
+  position: absolute
+  right: 0
+  top: 219px
+  width: 348px
+  height: 95px
+  transform: translateX(257px)
+  background: rgba(235, 235, 235, 0.5)
+  padding-left: 91px
+
+  &:hover
+    transform: translateX(0)
+
+  &__icon
+    position: absolute
+    top: 0
+    left: 0
+    width: 91px
+    height: 100%
+    background: $img-bg
+    display: inline-block
+    padding-top: 23px
+
+  &__info
+    display: inline-block
+    width: 257px
+    height: 100%
+    color: $text-color--dark
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+    padding-top: 17px
+
+    &--phone
+      padding-top: 35px
+
+  &--phone
+    top: 314px
+
+.to-top-btn
+  background: $img-bg
+  width: 84px
+  height: 84px
+  padding: 24px 0 0
+  opacity: .5
+  position: absolute
+  right: 0
+  bottom: 0
+  z-index: 1000
+
+  &:hover
+    opacity: 1

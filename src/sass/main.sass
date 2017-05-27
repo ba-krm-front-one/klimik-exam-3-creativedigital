@@ -1,0 +1,43 @@
+@import "layout"
+@import "fonts"
+@import "variables"
+@import "header/main"
+@import "about-us/main"
+@import "services/main"
+@import "works/main"
+@import "team/main"
+@import "contact/main"
+@import "footer/main"
+
+body
+  font: 700 18px $main-ff
+
+.container
+  max-width: 1110px
+
+.hidden
+  display: none
+
+.show
+  display: block !important
+
+.section-title
+  font-family: $second-ff
+  color: $text-color--light
+  font-size: 36px
+  font-weight: 600
+  line-height: 60px
+  text-transform: uppercase
+  margin: 24px 0
+
+  &--dark
+    @extend .section-title
+    color: $text-color--dark
+
+.no-padding
+  padding: 0
+
+
+
+
+@import "media"

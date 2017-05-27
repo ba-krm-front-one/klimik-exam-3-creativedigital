@@ -1,0 +1,39 @@
+//------------HEADER-MENU-TOGGLE------------
+.toggle-menu
+  width: 45px
+  height: 35px
+  float: right
+  right: 0
+  top: 20px
+  background: none
+  border: none
+  outline: none
+  position: relative
+  display: none
+
+.sandwich
+  width: $w
+  height: $w
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
+  &__topper
+    position: relative
+    top: 0
+    width: $w
+    height: $h
+    background: $text-color--light
+    border: none
+    border-radius: 6px
+    display: block
+
+  &__middle
+    @extend .sandwich__topper
+    top: $h * 2
+
+  &__bottom
+    @extend .sandwich__topper
+    top: $h * 4
